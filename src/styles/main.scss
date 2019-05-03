@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+// overriding bootstrap stylings
+$font-family-sans-serif: 'Titillium Web', sans-serif;
+$primary: #0F69AF;
+$info: #FFC832;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+$white: #FFFFFF;
+$grey-f1: #F1F1F1;
+$grey-3: #333333;
+
+body {
+    background: $grey-f1;
+}
+
+.navbar {
+    background: $primary;
+
+    .nav-link {
+        color: $white;
+
+        &:hover, &:active {
+            color: $grey-3;
+        }
+    }
+}
+
+.navbar-brand {
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+
+    img {
+        width: 25px;
+    }
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
+}
+
+.no-stock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+
+    img {
+        width: 10%;
+    }
+}
