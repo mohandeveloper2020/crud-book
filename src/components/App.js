@@ -34,8 +34,13 @@ class App extends Component {
                 />
 
                 <Route 
-                    path={'/ViewBook'}
+                    path={'/ViewBook/:id'}
                     component={ViewBook}
+                />
+
+                <Route 
+                  path={'/EditBook/:id'}
+                  component={AddBooks}
                 />
               </Switch>
               

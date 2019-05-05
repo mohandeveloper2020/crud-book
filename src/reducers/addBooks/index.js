@@ -7,7 +7,7 @@ export default function(
             author: 'Tim Brown'            
         },
         {
-            id: 1,
+            id: 2,
             title: 'The Design of Everyday things',            
             desc: "Don Norman is a voyeur, always watching, always on the lookout for some common-day ..... Explorations in cognition (A Series of books in psychology).",            
             author: 'Don Norman'

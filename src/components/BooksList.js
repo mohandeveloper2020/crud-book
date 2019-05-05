@@ -49,12 +49,13 @@ class BooksList extends Component {
                                     <p className="card-text font-italic text-muted mb-1">{book.author}</p>
                                 </div>
                                 <div className="card-footer">
-                                    <button
+                                    <Link
+                                        to={`/EditBook/${book.id}`}
                                         className={'btn btn-sm btn-outline-secondary mr-2'}
                                         onClick={this.handleEdit.bind(this, book)} >
                                             <i className="fas fa-pen"></i>
                                             {/* {'Edit'} */}
-                                    </button>
+                                    </Link>
 
                                     <button 
                                         className={'btn btn-sm btn-outline-secondary'}
@@ -64,7 +65,7 @@ class BooksList extends Component {
                                     </button>
 
                                     <Link 
-                                        to={'/ViewBook'} 
+                                        to={`/ViewBook/${book.id}`} 
                                         className="card-link float-right"
                                         onClick={this.handleViewBook.bind(this, book)} >
                                             <i class="fas fa-eye"></i>
